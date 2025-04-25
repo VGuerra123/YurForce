@@ -1,3 +1,4 @@
+// src/components/GameCard.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
@@ -11,17 +12,17 @@ interface GameCardProps {
   delay?: number;
 }
 
-const GameCard: React.FC<GameCardProps> = ({ 
-  title, 
-  console: consoleName, 
-  genre, 
-  imageUrl, 
-  delay = 0 
+const GameCard: React.FC<GameCardProps> = ({
+  title,
+  console: consoleName,
+  genre,
+  imageUrl,
+  delay = 0
 }) => {
   const { playHoverSound, playClickSound } = useAudio();
-  
+
   return (
-    <motion.div 
+    <motion.div
       className="game-card"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -29,8 +30,8 @@ const GameCard: React.FC<GameCardProps> = ({
       onMouseEnter={playHoverSound}
     >
       <div className="relative">
-        <img 
-          src={imageUrl} 
+        <img
+          src={imageUrl}
           alt={title}
           className="w-full h-48 object-cover"
         />
@@ -38,17 +39,17 @@ const GameCard: React.FC<GameCardProps> = ({
           {consoleName}
         </div>
       </div>
-      
+
       <div className="p-4">
         <h3 className="text-lg font-bold text-[#e0e0ff] mb-1 truncate">{title}</h3>
         <p className="text-[#a0a0d0] text-sm mb-3">{genre}</p>
-        
-        <button 
+
+        <button
           className="w-full py-2 flex items-center justify-center bg-[#151542] hover:bg-[#00e5ff]/20 text-[#00e5ff] border border-[#00e5ff] rounded transition-colors"
           onClick={playClickSound}
         >
           <Download size={16} className="mr-2" />
-          <span>Download ROM</span>
+          <span>Descargar ROM</span>
         </button>
       </div>
     </motion.div>

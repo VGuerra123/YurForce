@@ -1,3 +1,4 @@
+// src/components/Navbar.tsx
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Volume2, VolumeX, Menu, X } from 'lucide-react';
@@ -8,27 +9,24 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { soundEnabled, toggleSound, playHoverSound, playClickSound } = useAudio();
-  
+
   const links = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/theme', label: 'Theme' },
-    { path: '/downloads', label: 'Downloads' },
-    { path: '/catalog', label: 'Games' },
-    { path: '/legal', label: 'Legal' },
+    { path: '/', label: 'Inicio' },
+    { path: '/about', label: 'Acerca de' },
+    { path: '/theme', label: 'Tema' },
+    { path: '/downloads', label: 'Descargas' },
+    { path: '/catalog', label: 'Juegos' },
+    { path: '/legal', label: 'Aviso legal' },
   ];
-  
+
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    
+    const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   return (
-    <motion.nav 
+    <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-[#151542]/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
@@ -41,8 +39,8 @@ const Navbar: React.FC = () => {
           <NavLink to="/" className="text-2xl font-bold gradient-text">
             YurForce
           </NavLink>
-          
-          {/* Desktop Navigation */}
+
+          {/* Navegación de escritorio */}
           <div className="hidden md:flex items-center space-x-8">
             {links.map(link => (
               <NavLink
@@ -50,10 +48,10 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 onMouseEnter={playHoverSound}
                 onClick={playClickSound}
-                className={({ isActive }) => 
+                className={({ isActive }) =>
                   `text-sm uppercase tracking-wider transition-all ${
-                    isActive 
-                      ? 'text-[#00e5ff] text-glow' 
+                    isActive
+                      ? 'text-[#00e5ff] text-glow'
                       : 'text-[#e0e0ff] hover:text-[#00e5ff]'
                   }`
                 }
@@ -61,8 +59,8 @@ const Navbar: React.FC = () => {
                 {link.label}
               </NavLink>
             ))}
-            
-            <button 
+
+            <button
               onClick={() => {
                 toggleSound();
                 playClickSound();
@@ -73,10 +71,10 @@ const Navbar: React.FC = () => {
               {soundEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
             </button>
           </div>
-          
-          {/* Mobile Menu Button */}
+
+          {/* Botón de menú móvil */}
           <div className="md:hidden flex items-center">
-            <button 
+            <button
               onClick={() => {
                 setIsOpen(!isOpen);
                 playClickSound();
@@ -89,10 +87,10 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      {/* Mobile Navigation */}
+
+      {/* Menú móvil */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           className="md:hidden bg-[#151542]/95 backdrop-blur-md"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
@@ -109,10 +107,10 @@ const Navbar: React.FC = () => {
                     playClickSound();
                   }}
                   onMouseEnter={playHoverSound}
-                  className={({ isActive }) => 
+                  className={({ isActive }) =>
                     `text-sm uppercase tracking-wider py-2 transition-all ${
-                      isActive 
-                        ? 'text-[#00e5ff] text-glow' 
+                      isActive
+                        ? 'text-[#00e5ff] text-glow'
                         : 'text-[#e0e0ff] hover:text-[#00e5ff]'
                     }`
                   }
@@ -120,8 +118,8 @@ const Navbar: React.FC = () => {
                   {link.label}
                 </NavLink>
               ))}
-              
-              <button 
+
+              <button
                 onClick={() => {
                   toggleSound();
                   playClickSound();
@@ -130,7 +128,7 @@ const Navbar: React.FC = () => {
                 onMouseEnter={playHoverSound}
               >
                 {soundEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
-                <span>{soundEnabled ? 'Sound On' : 'Sound Off'}</span>
+                <span>{soundEnabled ? 'Sonido activado' : 'Sonido desactivado'}</span>
               </button>
             </div>
           </div>

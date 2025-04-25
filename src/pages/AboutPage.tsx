@@ -1,13 +1,13 @@
+// src/pages/AboutPage.tsx
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
 
 const AboutPage: React.FC = () => {
-  // Update page title
   useEffect(() => {
-    document.title = 'About LaunchBox & BigBox - YurForce';
+    document.title = 'Acerca de LaunchBox y BigBox - YurForce';
   }, []);
-  
+
   return (
     <motion.div
       className="container mx-auto px-4 py-12"
@@ -16,12 +16,12 @@ const AboutPage: React.FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <SectionTitle 
-        title="What is LaunchBox & BigBox?"
-        subtitle="A comprehensive platform for managing and playing your retro game collection"
+      <SectionTitle
+        title="¿Qué es LaunchBox y BigBox?"
+        subtitle="Una plataforma completa para gestionar y jugar tu colección retro"
         alignment="center"
       />
-      
+
       <div className="max-w-4xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <motion.div
@@ -30,119 +30,82 @@ const AboutPage: React.FC = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
           >
             <h3 className="text-xl font-bold mb-4 text-[#00e5ff]">LaunchBox</h3>
-            <p className="text-[#e0e0ff] mb-4">
-              LaunchBox is a sophisticated game library manager that offers a clean, user-friendly interface 
-              to organize your entire gaming collection. It started as a frontend for DOSBox but evolved into 
-              a comprehensive solution for managing games across multiple platforms.
+            <p className="text-[#e0e5ff] mb-4">
+              LaunchBox es un gestor de biblioteca de juegos sofisticado con una interfaz limpia y fácil de usar. 
+              Comenzó como un frontend para DOSBox, pero evolucionó en una solución integral para gestionar juegos de múltiples plataformas.
             </p>
             <p className="text-[#a0a0d0] mb-4">
-              With LaunchBox, you can import games from various platforms, download metadata and artwork, 
-              and launch games with their appropriate emulators, all from a single, unified interface.
+              Con LaunchBox puedes importar tus juegos, descargar metadatos e imágenes automáticamente y lanzarlos con sus emuladores correspondientes desde una sola aplicación.
             </p>
             <div className="bg-[#151542] p-4 rounded-lg">
-              <h4 className="font-bold mb-2">Key Features:</h4>
+              <h4 className="font-bold mb-2">Características clave:</h4>
               <ul className="list-disc pl-5 text-[#a0a0d0] space-y-1">
-                <li>Extensive platform support</li>
-                <li>Automatic metadata and artwork downloading</li>
-                <li>Customizable interface</li>
-                <li>Powerful filtering and sorting options</li>
-                <li>Multi-emulator support</li>
+                <li>Soporte para múltiples plataformas</li>
+                <li>Descarga automática de metadatos e imágenes</li>
+                <li>Interfaz personalizable</li>
+                <li>Filtrado y ordenación potentes</li>
+                <li>Compatible con varios emuladores</li>
               </ul>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <h3 className="text-xl font-bold mb-4 text-[#ff00e5]">BigBox</h3>
-            <p className="text-[#e0e0ff] mb-4">
-              BigBox is LaunchBox's full-screen mode, designed specifically for home theater setups and 
-              arcade cabinets. It provides a TV and controller-friendly interface, perfect for a 
-              console-like experience on your PC.
+            <p className="text-[#e0e5ff] mb-4">
+              BigBox es el modo de pantalla completa de LaunchBox, diseñado para setups de home theater y arcades. 
+              Ofrece una experiencia tipo consola para TV y mandos.
             </p>
             <p className="text-[#a0a0d0] mb-4">
-              With its customizable themes, BigBox transforms your gaming PC into a virtual console, 
-              offering a visually stunning way to browse and launch your game collection from the comfort 
-              of your couch.
+              Con temas personalizables, BigBox convierte tu PC en una consola virtual, permitiéndote navegar y lanzar juegos desde el sofá.
             </p>
             <div className="bg-[#151542] p-4 rounded-lg">
-              <h4 className="font-bold mb-2">Key Features:</h4>
+              <h4 className="font-bold mb-2">Características clave:</h4>
               <ul className="list-disc pl-5 text-[#a0a0d0] space-y-1">
-                <li>Controller-friendly navigation</li>
-                <li>Customizable themes and layouts</li>
-                <li>Beautiful, full-screen experience</li>
-                <li>Smooth animations and transitions</li>
-                <li>Theme creation capabilities</li>
+                <li>Navegación con mando</li>
+                <li>Temas y diseños personalizables</li>
+                <li>Experiencia de pantalla completa</li>
+                <li>Animaciones y transiciones suaves</li>
+                <li>Capacidad de crear temas</li>
               </ul>
             </div>
           </motion.div>
         </div>
-        
+
         <motion.div
           className="mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          <SectionTitle 
-            title="Custom Themes"
-            subtitle="Express your style with personalized interfaces"
+          <SectionTitle
+            title="Temas personalizados"
+            subtitle="Exprésate con interfaces únicas"
           />
-          
+
           <div className="bg-[#151542] p-6 rounded-lg mb-8">
-            <p className="text-[#e0e0ff] mb-4">
-              One of BigBox's most powerful features is its theming system. Theme creators can customize 
-              virtually every aspect of the interface, from layouts and animations to sounds and navigation.
+            <p className="text-[#e0e5ff] mb-4">
+              El sistema de theming de BigBox permite personalizar casi todo: diseños, animaciones, sonidos y más.
             </p>
             <p className="text-[#a0a0d0]">
-              Themes like YurForce take advantage of this flexibility to create unique, immersive experiences 
-              that transform how you interact with your game collection. With custom themes, BigBox becomes more 
-              than just a launcher—it becomes an extension of your gaming personality.
+              Temas como YurForce aprovechan esta flexibilidad para crear experiencias inmersivas y únicas para tu colección retro.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <img 
-              src="https://images.pexels.com/photos/4062221/pexels-photo-4062221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              alt="BigBox Theme Example 1" 
-              className="w-full h-48 object-cover rounded-lg"
-            />
-            <img 
-              src="https://images.pexels.com/photos/4077269/pexels-photo-4077269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              alt="BigBox Theme Example 2" 
-              className="w-full h-48 object-cover rounded-lg"
-            />
-          </div>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 0.5 }}
-        >
-          <SectionTitle 
-            title="Community"
-            subtitle="Join a passionate group of retro gaming enthusiasts"
-          />
-          
-          <p className="text-[#e0e0ff] mb-4">
-            LaunchBox and BigBox are supported by a vibrant, active community of retro gaming enthusiasts 
-            and theme creators. Forums, Discord channels, and social media groups provide spaces for users 
-            to share their setups, ask questions, and showcase their custom themes.
-          </p>
-          
-          <p className="text-[#a0a0d0] mb-8">
-            The YurForce theme is a contribution to this passionate community, created by fans for fans, 
-            to enhance the retro gaming experience for everyone.
-          </p>
-          
-          <div className="bg-gradient-to-r from-[#00e5ff]/20 to-[#ff00e5]/20 p-6 rounded-lg border border-[#00e5ff]/30">
-            <p className="text-center text-[#e0e0ff] font-bold">
-              Ready to transform your retro gaming experience with YurForce?
-            </p>
-          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.5 }}
+          >
+            <div className="bg-gradient-to-r from-[#00e5ff]/20 to-[#ff00e5]/20 p-6 rounded-lg border border-[#00e5ff]/30">
+              <p className="text-center text-[#e0e0ff] font-bold">
+                ¿Listo para transformar tu experiencia retro con YurForce?
+              </p>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

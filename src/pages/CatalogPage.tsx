@@ -1,3 +1,4 @@
+// src/pages/CatalogPage.tsx
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -6,50 +7,47 @@ import GameCard from '../components/GameCard';
 import { useAudio } from '../hooks/useAudio';
 import { gameData } from '../data/gameData';
 
-// Game filtering and pagination
+// Paginación y filtrado
 const CatalogPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedConsole, setSelectedConsole] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const { playHoverSound, playClickSound } = useAudio();
-  
+
   const consoles = [
-    { id: 'all', name: 'All Consoles' },
+    { id: 'all', name: 'Todas las consolas' },
     { id: 'nes', name: 'Nintendo NES' },
     { id: 'snes', name: 'Super Nintendo' },
     { id: 'genesis', name: 'Sega Genesis' },
     { id: 'ps1', name: 'PlayStation' },
     { id: 'n64', name: 'Nintendo 64' },
   ];
-  
+
   const gamesPerPage = 12;
-  
-  // Filter games
+
+  // Filtrar juegos
   const filteredGames = gameData.filter(game => {
     const matchesSearch = game.title.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesConsole = selectedConsole === 'all' || game.console === selectedConsole;
     return matchesSearch && matchesConsole;
   });
-  
-  // Paginate games
+
+  // Paginación
   const indexOfLastGame = currentPage * gamesPerPage;
   const indexOfFirstGame = indexOfLastGame - gamesPerPage;
   const currentGames = filteredGames.slice(indexOfFirstGame, indexOfLastGame);
-  
   const totalPages = Math.ceil(filteredGames.length / gamesPerPage);
-  
-  // Change page
+
   const paginate = (pageNumber: number) => {
     playClickSound();
     setCurrentPage(pageNumber);
     window.scrollTo(0, 0);
   };
-  
-  // Update page title
+
   useEffect(() => {
-    document.title = 'Game Catalog - YurForce';
+    document.title = 'Catálogo de juegos - YurForce';
   }, []);
-  
+
   return (
     <motion.div
       className="container mx-auto px-4 py-12"
@@ -58,12 +56,12 @@ const CatalogPage: React.FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <SectionTitle 
-        title="Game Catalog"
-        subtitle="Browse our collection of retro games"
+      <SectionTitle
+        title="Catálogo de juegos"
+        subtitle="Explora nuestra colección de juegos retro"
         alignment="center"
       />
-      
+
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="mb-8 bg-[#151542] p-6 rounded-lg"
@@ -78,13 +76,13 @@ const CatalogPage: React.FC = () => {
               </div>
               <input
                 type="text"
-                placeholder="Search games..."
+                placeholder="Buscar juegos..."
                 className="w-full pl-10 pr-4 py-2 bg-[#0a0a2e] text-[#e0e0ff] border border-[#a0a0d0]/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00e5ff] focus:border-transparent"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            
+
             <div className="relative w-full md:w-64">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <Filter size={18} className="text-[#a0a0d0]" />
@@ -95,9 +93,9 @@ const CatalogPage: React.FC = () => {
                 onChange={(e) => setSelectedConsole(e.target.value)}
                 onMouseEnter={playHoverSound}
               >
-                {consoles.map(console => (
-                  <option key={console.id} value={console.id}>
-                    {console.name}
+                {consoles.map(c => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
                   </option>
                 ))}
               </select>
@@ -107,7 +105,7 @@ const CatalogPage: React.FC = () => {
             </div>
           </div>
         </motion.div>
-        
+
         {currentGames.length > 0 ? (
           <>
             <motion.div
@@ -127,7 +125,7 @@ const CatalogPage: React.FC = () => {
                 />
               ))}
             </motion.div>
-            
+
             <motion.div
               className="flex justify-center items-center space-x-2"
               initial={{ opacity: 0, y: 20 }}
@@ -142,11 +140,11 @@ const CatalogPage: React.FC = () => {
               >
                 <ChevronLeft size={20} />
               </button>
-              
+
               <div className="text-[#a0a0d0]">
-                Page {currentPage} of {totalPages}
+                Página {currentPage} de {totalPages}
               </div>
-              
+
               <button
                 className="p-2 bg-[#151542] text-[#e0e0ff] rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 onClick={() => paginate(currentPage + 1)}
@@ -165,7 +163,7 @@ const CatalogPage: React.FC = () => {
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <p className="text-xl text-[#a0a0d0]">
-              No games found. Try adjusting your search or filter.
+              No se encontraron juegos. Ajusta tu búsqueda o filtro.
             </p>
           </motion.div>
         )}
@@ -174,8 +172,8 @@ const CatalogPage: React.FC = () => {
   );
 };
 
-// Add missing ChevronDown component
-const ChevronDown = ({ size, className }: { size: number, className: string }) => (
+// Componente ChevronDown igual, sin texto visible
+const ChevronDown = ({ size, className }: { size: number; className: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
