@@ -1,0 +1,205 @@
+id;nombre;link_imagen
+1;Pong;https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png
+2;Space Invaders;https://upload.wikimedia.org/wikipedia/commons/6/6a/Space_Invaders_cover.jpg
+3;Pitfall!;https://upload.wikimedia.org/wikipedia/en/0/04/Pitfall_cover_art.png
+4;Missile Command;https://upload.wikimedia.org/wikipedia/en/7/74/Missile_Command_cover.jpg
+5;Adventure;https://upload.wikimedia.org/wikipedia/en/1/11/Adventure_2600_cover.jpg
+6;Super Mario Bros.;https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png
+7;The Legend of Zelda;https://upload.wikimedia.org/wikipedia/en/9/9c/The_Legend_of_Zelda_box_art.jpg
+8;Metroid;https://upload.wikimedia.org/wikipedia/en/b/b8/Metroid-box-art.jpg
+9;Mega Man 2;https://upload.wikimedia.org/wikipedia/en/e/e1/Mega_Man_2_NES_box_art.jpg
+10;Castlevania;https://upload.wikimedia.org/wikipedia/en/6/6f/Castlevania-nes-cover.jpg
+id;nombre;link_imagen
+11;Contra;https://upload.wikimedia.org/wikipedia/en/6/6e/Contra_NES_box_art.png
+12;Duck Hunt;https://upload.wikimedia.org/wikipedia/en/0/03/Duck_Hunt_box_art.jpg
+13;Final Fantasy;https://upload.wikimedia.org/wikipedia/en/5/5e/Final_Fantasy_1_box_art.png
+14;Punch-Out!!;https://upload.wikimedia.org/wikipedia/en/3/33/Punch-Out!!_NES_cover_art.jpg
+15;Kid Icarus;https://upload.wikimedia.org/wikipedia/en/c/cd/KidIcarusBoxArt_NES.jpg
+16;Super Mario World;https://upload.wikimedia.org/wikipedia/en/2/28/Super_Mario_World_box_art.jpg
+17;The Legend of Zelda: A Link to the Past;https://upload.wikimedia.org/wikipedia/en/8/83/ALttPBox.png
+18;Super Metroid;https://upload.wikimedia.org/wikipedia/en/4/43/Super_Metroid.jpg
+19;Chrono Trigger;https://upload.wikimedia.org/wikipedia/en/5/51/ChronoTriggerSNESbox.jpg
+20;Final Fantasy VI;https://upload.wikimedia.org/wikipedia/en/5/5b/Final_Fantasy_VI_box_art.jpg
+id;nombre;link_imagen
+21;Donkey Kong Country;https://upload.wikimedia.org/wikipedia/en/4/47/Donkey_Kong_Country_box_art.jpg
+22;Street Fighter II;https://upload.wikimedia.org/wikipedia/en/9/9a/Street_Fighter_II_box_art.png
+23;Super Mario Kart;https://upload.wikimedia.org/wikipedia/en/7/78/Super_Mario_Kart_Box_Art.png
+24;EarthBound;https://upload.wikimedia.org/wikipedia/en/4/49/EarthBound_Box_art.jpg
+25;F-Zero;https://upload.wikimedia.org/wikipedia/en/0/06/F-Zero_Box_Art.jpg
+26;Sonic the Hedgehog 2;https://upload.wikimedia.org/wikipedia/en/5/59/Sonic_the_Hedgehog_2_box_art.png
+27;Streets of Rage 2;https://upload.wikimedia.org/wikipedia/en/0/09/Streets_of_Rage_2_box_art.jpg
+28;Phantasy Star IV;https://upload.wikimedia.org/wikipedia/en/f/f0/Phantasy_Star_IV_box_art.jpg
+29;Gunstar Heroes;https://upload.wikimedia.org/wikipedia/en/2/2b/Gunstar_Heroes_box_art.jpg
+30;ToeJam & Earl;https://upload.wikimedia.org/wikipedia/en/9/9f/ToeJam_and_Earl_box_art.jpg
+id;nombre;link_imagen
+31;Shinobi III;https://upload.wikimedia.org/wikipedia/en/0/0d/Shinobi_III_box_art.jpg
+32;Golden Axe;https://upload.wikimedia.org/wikipedia/en/7/76/GoldenAxe_BoxArt.jpg
+33;Mortal Kombat II;https://upload.wikimedia.org/wikipedia/en/6/64/Mortal_Kombat_II_Box.jpg
+34;Final Fantasy VII;https://upload.wikimedia.org/wikipedia/en/a/ad/Final_Fantasy_VII_Boxart.png
+35;Metal Gear Solid;https://upload.wikimedia.org/wikipedia/en/5/5f/MGSbox.jpg
+36;Resident Evil 2;https://upload.wikimedia.org/wikipedia/en/5/5c/Resident_Evil_2_clean.jpg
+37;Crash Bandicoot;https://upload.wikimedia.org/wikipedia/en/2/29/Crash_Bandicoot_box_art.png
+38;Gran Turismo;https://upload.wikimedia.org/wikipedia/en/2/25/GranTurismo_CoverArt.jpg
+39;Castlevania: Symphony of the Night;https://upload.wikimedia.org/wikipedia/en/f/fc/Castlevania_Symphony_of_the_Night.jpg
+40;Tekken 3;https://upload.wikimedia.org/wikipedia/en/6/6e/Tekken_3_cover_art.jpg
+id;nombre;link_imagen
+41;Spyro the Dragon;https://upload.wikimedia.org/wikipedia/en/1/10/Spyro_the_Dragon_PS_box_art.jpg
+42;Tony Hawk’s Pro Skater 2;https://upload.wikimedia.org/wikipedia/en/5/50/Tony_Hawk%27s_Pro_Skater_2_cover.jpg
+43;Silent Hill;https://upload.wikimedia.org/wikipedia/en/d/dc/Silent_Hill_cover.png
+44;Super Mario 64;https://upload.wikimedia.org/wikipedia/en/9/98/Super_Mario_64_box.png
+45;The Legend of Zelda: Ocarina of Time;https://upload.wikimedia.org/wikipedia/en/4/46/Ocarina_of_Time_box_art.jpg
+46;GoldenEye 007;https://upload.wikimedia.org/wikipedia/en/8/86/GoldenEye007boxart.jpg
+47;Mario Kart 64;https://upload.wikimedia.org/wikipedia/en/9/9a/Mario_Kart_64_cover.jpg
+48;Banjo-Kazooie;https://upload.wikimedia.org/wikipedia/en/e/e6/Banjo-Kazooie_box_art.jpg
+49;Star Fox 64;https://upload.wikimedia.org/wikipedia/en/f/f1/Star_Fox_64_box_art.jpg
+50;Perfect Dark;https://upload.wikimedia.org/wikipedia/en/5/5a/Perfect_Dark_box_art.jpg
+51;Conker’s Bad Fur Day;https://upload.wikimedia.org/wikipedia/en/4/44/Conker%27s_Bad_Fur_Day_N64_box_art.jpg
+52;Grand Theft Auto: San Andreas;https://upload.wikimedia.org/wikipedia/en/5/54/Grand_Theft_Auto_San_Andreas_box_art.jpg
+53;Shadow of the Colossus;https://upload.wikimedia.org/wikipedia/en/f/f2/Shadow_of_the_Colossus_box_art.jpg
+54;Metal Gear Solid 3: Snake Eater;https://upload.wikimedia.org/wikipedia/en/d/d6/Metal_Gear_Solid_3_Snake_Eater_box_art.jpg
+55;God of War;https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_cover.jpg
+56;Final Fantasy X;https://upload.wikimedia.org/wikipedia/en/3/3a/Final_Fantasy_X_Box_Art.jpg
+57;Kingdom Hearts;https://upload.wikimedia.org/wikipedia/en/0/0c/Kingdom_Hearts_Box_Shot.png
+58;Devil May Cry 3;https://upload.wikimedia.org/wikipedia/en/9/92/Devil_May_Cry_3_box_art.jpg
+59;Resident Evil 4;https://upload.wikimedia.org/wikipedia/en/1/19/Resident_Evil_4_Box.jpg
+60;Okami;https://upload.wikimedia.org/wikipedia/en/5/53/Okami_Amazon_USA_cover.jpg
+61;Gran Turismo 4;https://upload.wikimedia.org/wikipedia/en/6/6b/Gran_Turismo_4_box_art.jpg
+62;Jak & Daxter;https://upload.wikimedia.org/wikipedia/en/c/cb/Jak_%26_Daxter_cover.jpg
+63;Persona 4;https://upload.wikimedia.org/wikipedia/en/9/94/Persona4BoxArt.jpg
+64;Halo: Combat Evolved;https://upload.wikimedia.org/wikipedia/en/4/41/HaloCombatEvolvedboxart.jpg
+65;Fable;https://upload.wikimedia.org/wikipedia/en/0/05/Fable_box_art.jpg
+66;Star Wars: Knights of the Old Republic;https://upload.wikimedia.org/wikipedia/en/6/6a/Star_Wars_Knights_of_the_Old_Republic_cover.jpg
+67;Ninja Gaiden Black;https://upload.wikimedia.org/wikipedia/en/d/d8/Ninja_Gaiden_Black_cover.jpg
+68;Forza Motorsport;https://upload.wikimedia.org/wikipedia/en/9/96/Forza_Motorsport_box_art.jpg
+69;Jet Set Radio Future;https://upload.wikimedia.org/wikipedia/en/2/20/Jet_Set_Radio_Future_cover.jpg
+70;The Legend of Zelda: The Wind Waker;https://upload.wikimedia.org/wikipedia/en/a/a9/The_Legend_of_Zelda_The_Wind_Waker.jpg
+71;Metroid Prime;https://upload.wikimedia.org/wikipedia/en/9/98/Metroid_Prime_Cover_Art.jpg
+72;Super Smash Bros. Melee;https://upload.wikimedia.org/wikipedia/en/e/ef/Super_Smash_Bros._Melee_box_art.png
+73;Resident Evil 4;https://upload.wikimedia.org/wikipedia/en/3/37/Resident_Evil_4_GameCube_box_art.png
+74;Mario Kart: Double Dash!!;https://upload.wikimedia.org/wikipedia/en/6/65/Mario_Kart_Double_Dash_cover.jpg
+75;Animal Crossing;https://upload.wikimedia.org/wikipedia/en/6/67/Animal_Crossing_Nintendo_GameCube_cover.jpg
+76;Paper Mario: The Thousand-Year Door;https://upload.wikimedia.org/wikipedia/en/0/02/Paper_Mario_TTYD_cover.jpg
+77;Pikmin 2;https://upload.wikimedia.org/wikipedia/en/5/5a/Pikmin2_cover.jpg
+78;Pokémon FireRed/LeafGreen;https://upload.wikimedia.org/wikipedia/en/b/bf/Pokemon_FireRed_Box.jpg
+79;The Legend of Zelda: The Minish Cap;https://upload.wikimedia.org/wikipedia/en/1/1d/Minish_Cap_cover.jpg
+80;Metroid Fusion;https://upload.wikimedia.org/wikipedia/en/c/c8/Metroid_Fusion_Box.png
+81;Advance Wars;https://upload.wikimedia.org/wikipedia/en/3/36/Advance_Wars_box_art.png
+82;Castlevania: Aria of Sorrow;https://upload.wikimedia.org/wikipedia/en/0/05/Castlevania_Aria_of_Sorrow_cover.jpg
+83;Final Fantasy Tactics Advance;https://upload.wikimedia.org/wikipedia/en/1/11/Final_Fantasy_Tactics_Advance_box_art.jpg
+84;Mario & Luigi: Superstar Saga;https://upload.wikimedia.org/wikipedia/en/7/7e/Mario_%26_Luigi_Superstar_Saga_cover.jpg
+85;Golden Sun;https://upload.wikimedia.org/wikipedia/en/4/41/Golden_Sun_cover.png
+86;New Super Mario Bros.;https://upload.wikimedia.org/wikipedia/en/3/33/New_Super_Mario_Bros._box_art.png
+87;Pokémon HeartGold/SoulSilver;https://upload.wikimedia.org/wikipedia/en/2/28/Pok%C3%A9mon_HeartGold_Boxart.png
+88;The Legend of Zelda: Phantom Hourglass;https://upload.wikimedia.org/wikipedia/en/5/5f/Phantom_Hourglass_box_art.jpg
+89;Mario Kart DS;https://upload.wikimedia.org/wikipedia/en/b/b5/Mario_Kart_DS_cover_art.png
+90;Animal Crossing: Wild World;https://upload.wikimedia.org/wikipedia/en/b/b8/Animal_Crossing_Wild_World_cover.jpg
+91;Brain Age;https://upload.wikimedia.org/wikipedia/en/c/c5/Brain_Age_Boxart.png
+92;Professor Layton and the Curious Village;https://upload.wikimedia.org/wikipedia/en/2/29/Professor_Layton_and_the_Curious_Village_cover.jpg
+93;Phoenix Wright: Ace Attorney;https://upload.wikimedia.org/wikipedia/en/1/1e/Phoenix_Wright_Ace_Attorney_box_art.jpg
+94;Castlevania: Dawn of Sorrow;https://upload.wikimedia.org/wikipedia/en/5/5f/Castlevania_Dawn_of_Sorrow_cover.jpg
+95;Kirby: Canvas Curse;https://upload.wikimedia.org/wikipedia/en/8/88/Kirby%27s_Canvas_Curse_cover_art.jpg
+96;The Last of Us;https://upload.wikimedia.org/wikipedia/en/4/4d/The_Last_of_Us_cover.jpg
+97;Uncharted 2: Among Thieves;https://upload.wikimedia.org/wikipedia/en/0/07/Uncharted_2_box_art.jpg
+98;Metal Gear Solid 4;https://upload.wikimedia.org/wikipedia/en/9/9b/Metal_Gear_Solid_4_cover.jpg
+99;Red Dead Redemption;https://upload.wikimedia.org/wikipedia/en/6/67/Red_Dead_Redemption.jpg
+100;Grand Theft Auto V;https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V_box_art.jpg
+101;God of War III;https://upload.wikimedia.org/wikipedia/en/0/0b/God_of_War_III_Cover_Art.jpg
+102;LittleBigPlanet;https://upload.wikimedia.org/wikipedia/en/a/a4/LittleBigPlanet_cover_art.jpg
+103;Demon’s Souls;https://upload.wikimedia.org/wikipedia/en/5/5e/Demon%27s_Souls_cover_art.jpg
+104;Journey;https://upload.wikimedia.org/wikipedia/en/0/0b/Journey_cover.jpg
+105;Heavy Rain;https://upload.wikimedia.org/wikipedia/en/5/5d/Heavy_Rain_Box_Art.jpg
+106;Halo 3;https://upload.wikimedia.org/wikipedia/en/5/5e/Halo3_cover.jpg
+107;Gears of War 2;https://upload.wikimedia.org/wikipedia/en/a/a0/Gears_of_War_2_box_art.jpg
+108;Mass Effect 2;https://upload.wikimedia.org/wikipedia/en/c/cf/Mass_Effect_2_cover.jpg
+109;BioShock;https://upload.wikimedia.org/wikipedia/en/7/76/BioShock_cover.jpg
+110;Forza Horizon;https://upload.wikimedia.org/wikipedia/en/1/1e/Forza_Horizon_cover_art.jpg
+111;Fallout 3;https://upload.wikimedia.org/wikipedia/en/5/5c/Fallout_3_coverart.jpg
+112;Minecraft: Xbox 360 Edition;https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_Xbox_360_Edition_cover.jpg
+113;Alan Wake;https://upload.wikimedia.org/wikipedia/en/0/0d/Alan_Wake_cover.jpg
+114;Red Dead Redemption;https://upload.wikimedia.org/wikipedia/en/8/8a/Red_Dead_Redemption_box_art.jpg
+115;Batman: Arkham City;https://upload.wikimedia.org/wikipedia/en/3/34/Batman_Arkham_City_cover.PNG
+116;Wii Sports;https://upload.wikimedia.org/wikipedia/en/a/ae/Wii_Sports_box_art.jpg
+117;Super Mario Galaxy;https://upload.wikimedia.org/wikipedia/en/5/50/Super_Mario_Galaxy_box_art.jpg
+118;The Legend of Zelda: Twilight Princess;https://upload.wikimedia.org/wikipedia/en/7/7e/Legend_of_Zelda_Twilight_Princess_box_art.jpg
+119;Mario Kart Wii;https://upload.wikimedia.org/wikipedia/en/e/e6/Mario_Kart_Wii_cover_art.jpg
+120;Super Smash Bros. Brawl;https://upload.wikimedia.org/wikipedia/en/a/a8/Super_Smash_Bros._Brawl_box_art.jpg
+121;Xenoblade Chronicles;https://upload.wikimedia.org/wikipedia/en/1/1c/Xenoblade_Chronicles_box_art.jpg
+122;Metroid Prime Trilogy;https://upload.wikimedia.org/wikipedia/en/7/73/Metroid_Prime_Trilogy_box_art.jpg
+123;Donkey Kong Country Returns;https://upload.wikimedia.org/wikipedia/en/7/72/Donkey_Kong_Country_Returns_cover.jpg
+124;God of War (2018);https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_2018_cover.jpg
+125;The Witcher 3: Wild Hunt;https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg
+126;Bloodborne;https://upload.wikimedia.org/wikipedia/en/a/aa/Bloodborne_cover.jpg
+127;Horizon Zero Dawn;https://upload.wikimedia.org/wikipedia/en/6/6a/Horizon_Zero_Dawn_cover_art.jpg
+128;Marvel’s Spider-Man;https://upload.wikimedia.org/wikipedia/en/1/19/Spider-Man_PS4_cover.jpg
+129;Persona 5;https://upload.wikimedia.org/wikipedia/en/2/2e/Persona_5_box_art.jpg
+130;Red Dead Redemption 2;https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg
+131;Ghost of Tsushima;https://upload.wikimedia.org/wikipedia/en/a/a8/Ghost_of_Tsushima.jpg
+132;Uncharted 4: A Thief’s End;https://upload.wikimedia.org/wikipedia/en/f/f9/Uncharted_4_cover.jpg
+133;Final Fantasy VII Remake;https://upload.wikimedia.org/wikipedia/en/7/7e/Final_Fantasy_VII_Remake_cover_art.jpg
+134;Sekiro: Shadows Die Twice;https://upload.wikimedia.org/wikipedia/en/0/0c/Sekiro_box_art.jpg
+135;Doom Eternal;https://upload.wikimedia.org/wikipedia/en/0/02/DOOM_Eternal_cover_art.jpg
+136;Resident Evil 2 (2019);https://upload.wikimedia.org/wikipedia/en/6/6d/Resident_Evil_2_2019_cover_art.jpg
+137;Monster Hunter World;https://upload.wikimedia.org/wikipedia/en/5/50/Monster_Hunter_World_cover_art.jpg
+138;NieR Automata;https://upload.wikimedia.org/wikipedia/en/8/8b/NieR_Automata_coverart.jpg
+139;Halo 5: Guardians;https://upload.wikimedia.org/wikipedia/en/5/53/Halo_5_box_art.jpg
+140;Gears 5;https://upload.wikimedia.org/wikipedia/en/e/e5/Gears_5_cover_art.jpg
+141;Forza Horizon 4;https://upload.wikimedia.org/wikipedia/en/0/06/Forza_Horizon_4_cover.jpg
+142;Sea of Thieves;https://upload.wikimedia.org/wikipedia/en/d/d6/Sea_of_Thieves_cover.jpg
+143;Ori and the Blind Forest;https://upload.wikimedia.org/wikipedia/en/0/0d/Ori_and_the_Blind_Forest_cover_art.jpg
+144;Sunset Overdrive;https://upload.wikimedia.org/wikipedia/en/0/08/Sunset_Overdrive_cover.jpg
+145;Cuphead;https://upload.wikimedia.org/wikipedia/en/1/10/Cuphead_cover.jpg
+146;Quantum Break;https://upload.wikimedia.org/wikipedia/en/3/38/Quantum_Break_cover_art.jpg
+147;The Legend of Zelda: Breath of the Wild;https://upload.wikimedia.org/wikipedia/en/c/ce/The_Legend_of_Zelda_Breath_of_the_Wild.jpg
+148;Super Mario Odyssey;https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg
+149;Animal Crossing: New Horizons;https://upload.wikimedia.org/wikipedia/en/4/4e/Animal_Crossing_New_Horizons.jpg
+150;Mario Kart 8 Deluxe;https://upload.wikimedia.org/wikipedia/en/5/5f/Mario_Kart_8_Deluxe.jpg
+151;Super Smash Bros. Ultimate;https://upload.wikimedia.org/wikipedia/en/6/6d/Super_Smash_Bros._Ultimate_box_art.jpg
+152;Splatoon 3;https://upload.wikimedia.org/wikipedia/en/1/1e/Splatoon_3.jpg
+153;Metroid Dread;https://upload.wikimedia.org/wikipedia/en/a/a9/Metroid_Dread.jpg
+154;Fire Emblem: Three Houses;https://upload.wikimedia.org/wikipedia/en/5/54/Fire_Emblem_Three_Houses_box_art.jpg
+155;Xenoblade Chronicles 3;https://upload.wikimedia.org/wikipedia/en/0/02/Xenoblade_Chronicles_3_cover_art.jpg
+156;Pokémon Scarlet/Violet;https://upload.wikimedia.org/wikipedia/en/5/55/Pok%C3%A9mon_Scarlet_and_Violet_box_art.png
+157;Luigi’s Mansion 3;https://upload.wikimedia.org/wikipedia/en/5/59/Luigi%27s_Mansion_3.jpg
+158;The Legend of Zelda: Tears of the Kingdom;https://upload.wikimedia.org/wikipedia/en/5/5f/The_Legend_of_Zelda_Tears_of_the_Kingdom.jpg
+159;Hades;https://upload.wikimedia.org/wikipedia/en/4/4b/Hades_cover_art.jpg
+160;Celeste;https://upload.wikimedia.org/wikipedia/en/b/bf/Celeste_cover_art.jpg
+161;Monster Hunter Rise;https://upload.wikimedia.org/wikipedia/en/7/7f/Monster_Hunter_Rise_cover_art.jpg
+162;Demon’s Souls (Remake);https://upload.wikimedia.org/wikipedia/en/5/5e/Demon%27s_Souls_Remake_cover_art.jpg
+163;Ratchet & Clank: Rift Apart;https://upload.wikimedia.org/wikipedia/en/a/a8/Ratchet_%26_Clank_Rift_Apart_cover_art.jpg
+164;Returnal;https://upload.wikimedia.org/wikipedia/en/5/55/Returnal_cover_art.jpg
+165;Horizon Forbidden West;https://upload.wikimedia.org/wikipedia/en/e/e7/Horizon_Forbidden_West_cover_art.jpg
+166;Marvel’s Spider-Man: Miles Morales;https://upload.wikimedia.org/wikipedia/en/7/7c/Marvel%27s_Spider-Man_Miles_Morales_cover.jpg
+167;Elden Ring;https://upload.wikimedia.org/wikipedia/en/2/2c/Elden_Ring_cover_art.jpg
+168;Astro’s Playroom;https://upload.wikimedia.org/wikipedia/en/b/b7/Astro%27s_Playroom_box_art.jpg
+169;Resident Evil Village;https://upload.wikimedia.org/wikipedia/en/d/d7/Resident_Evil_Village_cover_art.jpg
+170;Gran Turismo 7;https://upload.wikimedia.org/wikipedia/en/4/48/Gran_Turismo_7_cover_art.jpg
+171;Halo Infinite;https://upload.wikimedia.org/wikipedia/en/e/e3/Halo_Infinite.png
+172;Forza Horizon 5;https://upload.wikimedia.org/wikipedia/en/d/dc/Forza_Horizon_5_cover_art.jpg
+173;Microsoft Flight Simulator (2020);https://upload.wikimedia.org/wikipedia/en/a/a5/Microsoft_Flight_Simulator_2020_cover_art.jpg
+174;Starfield;https://upload.wikimedia.org/wikipedia/en/9/98/Starfield_cover.jpg
+175;Gears Tactics;https://upload.wikimedia.org/wikipedia/en/0/08/Gears_Tactics_cover.png
+176;Psychonauts 2;https://upload.wikimedia.org/wikipedia/en/c/cf/Psychonauts_2_cover_art.jpg
+177;Hi-Fi Rush;https://upload.wikimedia.org/wikipedia/en/1/14/Hi-Fi_Rush_cover.jpg
+178;Sea of Thieves (Optimizado);https://upload.wikimedia.org/wikipedia/en/d/d6/Sea_of_Thieves_cover.jpg
+179;Alex Kidd in Miracle World;https://upload.wikimedia.org/wikipedia/en/1/12/Alex_Kidd_in_Miracle_World_cover_art.jpg
+180;Phantasy Star;https://upload.wikimedia.org/wikipedia/en/5/5b/Phantasy_Star_cover_art.jpg
+181;Sonic the Hedgehog;https://upload.wikimedia.org/wikipedia/en/e/e0/Sonic_the_Hedgehog_8-bit_box_art.jpg
+182;Wonder Boy III: The Dragon’s Trap;https://upload.wikimedia.org/wikipedia/en/5/5f/Wonder_Boy_III_The_Dragon%27s_Trap_cover_art.jpg
+183;Shinobi;https://upload.wikimedia.org/wikipedia/en/a/ad/Shinobi_Master_System_box_art.jpg
+184;Sonic Adventure;https://upload.wikimedia.org/wikipedia/en/6/66/Sonic_Adventure_cover.jpg
+185;Shenmue;https://upload.wikimedia.org/wikipedia/en/6/63/Shenmue_box_en.jpg
+186;Jet Set Radio;https://upload.wikimedia.org/wikipedia/en/8/84/Jet_Set_Radio_box_art.jpg
+187;Skies of Arcadia;https://upload.wikimedia.org/wikipedia/en/7/7e/Skies_of_Arcadia_coverart.jpg
+188;Soulcalibur;https://upload.wikimedia.org/wikipedia/en/6/68/Soulcalibur_dreamcast_box_art.jpg
+189;Crazy Taxi;https://upload.wikimedia.org/wikipedia/en/3/39/Crazy_Taxi_dreamcast_cover.jpg
+190;Phantasy Star Online;https://upload.wikimedia.org/wikipedia/en/f/f2/Phantasy_Star_Online_cover_art.jpg
+191;Power Stone 2;https://upload.wikimedia.org/wikipedia/en/6/60/Power_Stone_2_box_art.jpg
+192;Metal Slug;https://upload.wikimedia.org/wikipedia/en/0/0f/Metal_Slug_box_art.jpg
+193;The King of Fighters ’98;https://upload.wikimedia.org/wikipedia/en/4/44/The_King_of_Fighters_%2798_cover_art.jpg
+194;Samurai Shodown II;https://upload.wikimedia.org/wikipedia/en/3/3c/Samurai_Shodown_II_box_art.jpg
+195;Garou: Mark of the Wolves;https://upload.wikimedia.org/wikipedia/en/9/94/Garou_Mark_of_the_Wolves_cover.jpg
+196;Fatal Fury Special;https://upload.wikimedia.org/wikipedia/en/1/1e/Fatal_Fury_Special_cover.jpg
+197;Bonk’s Adventure;https://upload.wikimedia.org/wikipedia/en/8/84/Bonk%27s_Adventure_cover_art.jpg
+198;R-Type;https://upload.wikimedia.org/wikipedia/en/1/13/R-Type_cover_art.jpg
+199;Castlevania: Rondo of Blood;https://upload.wikimedia.org/wikipedia/en/5/5c/Castlevania_Rondo_of_Blood_cover.jpg
+200;Ys Book I & II;https://upload.wikimedia.org/wikipedia/en/3/38/Ys_Book_I_%26_II_cover_art.jpg

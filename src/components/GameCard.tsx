@@ -1,56 +1,43 @@
 // src/components/GameCard.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
-import { useAudio } from '../hooks/useAudio';
 
-interface GameCardProps {
+interface Game {
+  id: number;
   title: string;
-  console: string;
-  genre: string;
-  imageUrl: string;
-  delay?: number;
+  description: string;
+  consola: string;
+  img: string;
 }
 
-const GameCard: React.FC<GameCardProps> = ({
-  title,
-  console: consoleName,
-  genre,
-  imageUrl,
-  delay = 0
-}) => {
-  const { playHoverSound, playClickSound } = useAudio();
+interface GameCardProps {
+  game: Game;
+}
 
+const GameCard: React.FC<GameCardProps> = ({ game }) => {
   return (
     <motion.div
-      className="game-card"
+      className="relative rounded-xl backdrop-blur-md border border-white/10 bg-white/10 hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden"
+      whileHover={{ y: -6 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: delay * 0.1, duration: 0.5 }}
-      onMouseEnter={playHoverSound}
+      transition={{ duration: 0.3 }}
     >
-      <div className="relative">
+      <div className="h-48 flex items-center justify-center bg-black/10">
         <img
-          src={imageUrl}
-          alt={title}
-          className="w-full h-48 object-cover"
+          src={game.img}
+          alt={game.title}
+          onError={(e) => (e.currentTarget.src = '/assets/placeholder.png')}
+          className="object-contain h-full p-4 transition-opacity duration-300"
         />
-        <div className="absolute top-2 right-2 px-2 py-1 bg-[#ff00e5] text-[#0a0a2e] text-xs font-bold rounded">
-          {consoleName}
-        </div>
       </div>
 
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-[#e0e0ff] mb-1 truncate">{title}</h3>
-        <p className="text-[#a0a0d0] text-sm mb-3">{genre}</p>
+      <div className="p-4 text-center">
+        <h3 className="text-white font-bold text-lg drop-shadow">{game.title}</h3>
+      </div>
 
-        <button
-          className="w-full py-2 flex items-center justify-center bg-[#151542] hover:bg-[#00e5ff]/20 text-[#00e5ff] border border-[#00e5ff] rounded transition-colors"
-          onClick={playClickSound}
-        >
-          <Download size={16} className="mr-2" />
-          <span>Descargar ROM</span>
-        </button>
+      <div className="absolute top-3 left-3 bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-xs font-medium px-3 py-1 rounded-full shadow-lg backdrop-blur">
+        {game.consola}
       </div>
     </motion.div>
   );

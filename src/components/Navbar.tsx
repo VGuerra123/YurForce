@@ -1,9 +1,9 @@
-// src/components/Navbar.tsx
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Volume2, VolumeX, Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAudio } from '../hooks/useAudio';
+import logo from '../assets/Hero/logo2.png'; // Importamos el logo
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +36,9 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <NavLink to="/" className="text-2xl font-bold gradient-text">
-            YurForce
+          {/* Logo */}
+          <NavLink to="/" className="flex items-center" onClick={playClickSound} onMouseEnter={playHoverSound}>
+            <img src={logo} alt="YurForce Logo" className="h-12 w-auto" />
           </NavLink>
 
           {/* Navegación de escritorio */}
