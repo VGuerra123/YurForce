@@ -8,15 +8,15 @@ import { ChevronRight } from 'lucide-react';
 import Background from '../components/Background';
 import { useAudio } from '../hooks/useAudio';
 
-import logo from '../assets/Hero/logo2.png';
-import mando1 from '../assets/Hero/mando1.png';
-import mando2 from '../assets/Hero/mando2.png';
-import mando3 from '../assets/Hero/mando3.png';
-import mando4 from '../assets/Hero/mando4.png';
-import mandoespecial from '../assets/Hero/mandoespecial.png';
-import mando5 from '../assets/Hero/mando5.png';
-import mando6 from '../assets/Hero/mando6.png';
-import mando7 from '../assets/Hero/mando7.png';
+import logo from '../../public/assets/Hero/logo2.png';
+import mando1 from '../../public/assets/Hero/mando1.png';
+import mando2 from '../../public/assets/Hero/mando2.png';
+import mando3 from '../../public/assets/Hero/mando3.png';
+import mando4 from '../../public/assets/Hero/mando4.png';
+import mandoespecial from '../../public/assets/Hero/mandoespecial.png';
+import mando5 from '../../public/assets/Hero/mando5.png';
+import mando6 from '../../public/assets/Hero/mando6.png';
+import mando7 from '../../public/assets/Hero/mando7.png';
 
 const frames = [
   mando1,
@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
   /* ------------- fondo parallax -------------- */
   useEffect(() => {
     const handler = ({ clientX, clientY }: MouseEvent) => {
-      if (window.innerWidth < 768) return; // sin parallax en móviles
+      if (window.innerWidth < 768) return; // desactivar parallax en móviles
       const x = (clientX / window.innerWidth - 0.5) * 10; // ±5 deg
       const y = (clientY / window.innerHeight - 0.5) * 10;
       setParallax({ x, y });
@@ -75,34 +75,55 @@ const HomePage: React.FC = () => {
         }}
       />
 
-      {/* Aura pulsante detrás del título */}
-      <div className="absolute top-28 left-1/2 -translate-x-1/2 w-[300px] h-[300px] rounded-full
-                      bg-cyan-400/30 blur-[100px] animate-pulse-slow pointer-events-none" />
+      {/* Aura pulsante detrás del título (solo en md+) */}
+      <div
+        className="
+          hidden md:block
+          absolute top-20 md:top-28 left-1/2 -translate-x-1/2
+          w-[200px] h-[200px] md:w-[300px] md:h-[300px]
+          rounded-full bg-cyan-400/30 blur-[100px]
+          animate-pulse-slow pointer-events-none
+        "
+      />
 
-      {/* Neblina holográfica tras el mando */}
-      <div className="absolute right-0 bottom-0 translate-x-1/4 translate-y-1/4 w-[450px] h-[450px]
-                      rounded-full bg-gradient-to-br from-cyan-500/30 to-fuchsia-500/20
-                      blur-[120px] animate-spin-slow -z-[1]" />
+      {/* Neblina holográfica tras el mando (solo en lg+) */}
+      <div
+        className="
+          hidden lg:block
+          absolute right-0 bottom-0 translate-x-1/4 translate-y-1/4
+          w-[300px] h-[300px] lg:w-[450px] lg:h-[450px]
+          rounded-full bg-gradient-to-br from-cyan-500/30 to-fuchsia-500/20
+          blur-[120px] animate-spin-slow -z-[1]
+        "
+      />
 
       {/* ---------- Contenido principal ---------- */}
       <section
-        className="relative z-10 flex flex-col lg:flex-row items-center justify-center
-                   h-[calc(100vh-4rem)] px-5 md:px-12 gap-6 lg:gap-10"
+        className="
+          relative z-10 flex flex-col lg:flex-row items-center justify-center
+          h-auto md:h-[calc(100vh-4rem)]
+          px-4 sm:px-5 md:px-12 gap-6 lg:gap-10
+        "
       >
         {/* ---------- Bloque texto centrado ---------- */}
         <motion.div
-          className="max-w-[34rem] w-full flex flex-col items-center lg:items-start
-                     text-center lg:text-left space-y-6 relative"
+          className="
+            max-w-full sm:max-w-[28rem] md:max-w-[34rem] w-full
+            flex flex-col items-center lg:items-start
+            text-center lg:text-left space-y-6 relative
+          "
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Título + logo emergente */}
+          {/* Título + logo emergente (logo oculto en xs) */}
           <div className="relative">
             <h1
-              className="text-[clamp(2.3rem,7vw,3.9rem)] font-extrabold
-                         bg-gradient-to-r from-white via-cyan-200 to-cyan-500
-                         bg-clip-text text-transparent leading-tight drop-shadow-sm"
+              className="
+                text-[clamp(2.3rem,7vw,3.9rem)] font-extrabold
+                bg-gradient-to-r from-white via-cyan-200 to-cyan-500
+                bg-clip-text text-transparent leading-tight drop-shadow-sm
+              "
             >
               YurForce
             </h1>
@@ -110,9 +131,14 @@ const HomePage: React.FC = () => {
             <img
               src={logo}
               alt="Dragón YurForce"
-              className="absolute left-[-9%] bottom-[-35%] left-1/2 -translate-x-1/2
-                         w-[42vw] max-w-[200px] min-w-[120px]
-                         drop-shadow-[0_0_30px_rgba(0,255,255,0.55)] select-none pointer-events-none"
+              className="
+                hidden sm:block
+                absolute bottom-[-35%] left-1/2 -translate-x-1/2
+                w-[30vw] max-w-[150px] min-w-[100px]
+                sm:w-[42vw] sm:max-w-[200px]
+                drop-shadow-[0_0_30px_rgba(0,255,255,0.55)]
+                select-none pointer-events-none
+              "
             />
           </div>
 
@@ -129,11 +155,13 @@ const HomePage: React.FC = () => {
           </p>
 
           {/* ---------------- Botones ---------------- */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <button
-              className="relative overflow-hidden px-7 py-3 rounded-full font-bold
-                         bg-white text-black shadow-lg transition-transform
-                         hover:-translate-y-0.5"
+              className="
+                relative overflow-hidden px-7 py-3 rounded-full font-bold
+                bg-white text-black shadow-lg transition-transform
+                hover:-translate-y-0.5 w-full sm:w-auto
+              "
               onClick={() => {
                 playClickSound();
                 navigate('/about');
@@ -144,8 +172,11 @@ const HomePage: React.FC = () => {
             </button>
 
             <button
-              className="px-7 py-3 rounded-full font-medium border border-cyan-500 text-cyan-300
-                         backdrop-blur hover:bg-cyan-500/15 transition-colors"
+              className="
+                px-7 py-3 rounded-full font-medium border border-cyan-500
+                text-cyan-300 backdrop-blur hover:bg-cyan-500/15 transition-colors
+                w-full sm:w-auto
+              "
               onClick={() => {
                 playClickSound();
                 navigate('/downloads');
@@ -162,14 +193,20 @@ const HomePage: React.FC = () => {
           tiltMaxAngleY={15}
           glareEnable
           glareMaxOpacity={0.22}
-          className="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px]"
+          className="
+            w-full
+            max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]
+          "
         >
           <AnimatePresence mode="wait">
             <motion.img
               key={frames[index]}
               src={frames[index]}
               alt={`mando-${index}`}
-              className="w-full object-contain drop-shadow-[0_8px_45px_rgba(0,255,255,0.35)]"
+              className="
+                w-full object-contain
+                drop-shadow-[0_8px_45px_rgba(0,255,255,0.35)]
+              "
               initial={{ opacity: 0, scale: 0.9, rotate: -5 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               exit={{ opacity: 0, scale: 1.05, rotate: 5 }}

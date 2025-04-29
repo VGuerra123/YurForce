@@ -1,23 +1,21 @@
-// src/components/LoadingScreen.tsx
 import React, { useEffect, useState } from 'react';
-import { Power } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../../public/assets/Hero/logo2.png'; // Logo YurForce
 
 const LoadingScreen: React.FC = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const id = setInterval(() => {
       setProgress(prev => {
         if (prev >= 100) {
-          clearInterval(interval);
+          clearInterval(id);
           return 100;
         }
         return prev + Math.random() * 10;
       });
     }, 200);
-
-    return () => clearInterval(interval);
+    return () => clearInterval(id);
   }, []);
 
   return (
@@ -27,19 +25,18 @@ const LoadingScreen: React.FC = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <motion.div
+      {/* Logo animado */}
+      <motion.img
+        src={logo}
+        alt="YurForce Logo"
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.5, 1, 0.5],
+          rotate: [0, 5, 0],
         }}
-        transition={{
-          repeat: Infinity,
-          duration: 2
-        }}
-        className="mb-8"
-      >
-        <Power size={64} color="#00e5ff" />
-      </motion.div>
+        transition={{ repeat: Infinity, duration: 2 }}
+        className="mb-8 h-16 w-auto"
+      />
 
       <motion.h1
         className="text-4xl md:text-6xl font-bold mb-6 gradient-text"
@@ -50,12 +47,13 @@ const LoadingScreen: React.FC = () => {
         YurForce
       </motion.h1>
 
+      {/* Barra de progreso */}
       <div className="w-64 md:w-96 h-2 bg-[#151542] rounded-full overflow-hidden">
         <motion.div
           className="h-full bg-gradient-to-r from-[#00e5ff] to-[#ff00e5]"
           initial={{ width: '0%' }}
           animate={{ width: `${progress}%` }}
-          transition={{ ease: "easeInOut" }}
+          transition={{ ease: 'easeInOut' }}
         />
       </div>
 
